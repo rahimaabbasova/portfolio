@@ -1,38 +1,145 @@
 .App {
-  text-align: center;
+
+}
+.HeroImage{
+  background: url(heroimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+.HeroText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  font-size: x-large;
+}.Part{
+  margin-left: 100px;
+  width: calc(100vw - 220px);
+}
+.photo2{
+  background: url(photo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  border: 5px solid grey;
+}
+.BoldText{
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  margin: 30px 0px 30px 100px;
+  width: calc(100vw - 212px);
+  color:grey;
+  background-color:grey;
+  height: 2px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.GalleryRow{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.Gallery{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.galleryphoto1{
+  background: url(galleryphoto1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.galleryphoto2{
+  background: url(galleryphoto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.galleryphoto3{
+  background: url(galleryphoto3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.galleryphoto4{
+  background: url(galleryphoto4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.galleryphoto5{
+  background: url(galleryphoto5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000 ;
+}
+.galleryphoto6{
+  background: url(galleryphoto6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.ImageContainer{
+  width: calc(100%/3);
+  height: 300px;
+  overflow: hidden;
+}
+
+.ImageContainer:hover .overlay {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 10000;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-80%);
+  transition: all 0.5s ease;
+}
+.overlaytext {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input[type=text]{
+  margin: 10px 20px 10px 0px;
+  border: 1px solid grey;
+  height: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=text]:nth-child(4){
+  height: 100px
+}
+input[type=send]{
+  text-align: center;
+  background-color: grey;
+  color: white;
+  border: none;
+  height: 30px;
 }
