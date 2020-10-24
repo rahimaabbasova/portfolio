@@ -132,8 +132,8 @@ input[type=text]{
   margin: 10px 20px 10px 0px;
   border: 1px solid grey;
   height: 30px;
-  width: calc((100% - 46px)/3);
-  padding: 0;
+  width: calc((100% - 76px)/3);
+  padding: 0 0 0 10px;
 }
 
 input[type=text]:nth-child(3){
@@ -148,6 +148,7 @@ input[type=send]{
   height: 30px;
 }
 .bigbutton{
-  height: 100px;
-
+  height: 100px !important;
+  width: 100% !important;
+  padding: 0 0 0 10px;
 }

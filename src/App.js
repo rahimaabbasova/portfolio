@@ -95,7 +95,7 @@ function App(props) {
           <input type="text" placeholder="Your Name..."></input>
           <input type="text"placeholder="Your Email..."></input>
           <input type="text"placeholder="Subject..."></input><br></br>
-          <input type="text"placeholder="Leave your message..." className='bigbutton'></input><br></br>
+          <textarea type="text"placeholder="Leave your message..." className='bigbutton'></textarea><br></br>
           <input type="send" value="SEND MESSAGE"></input>
         </form></div>
         <hr></hr>
