@@ -132,9 +132,13 @@ input[type=text]{
   margin: 10px 20px 10px 0px;
   border: 1px solid grey;
   height: 30px;
+  width: calc((100% - 46px)/3);
+  padding: 0;
 }
-input[type=text]:nth-child(4){
-  height: 100px
+
+input[type=text]:nth-child(3){
+  margin-left: 0px;
+  margin-right: 0px;
 }
 input[type=send]{
   text-align: center;
@@ -142,4 +146,8 @@ input[type=send]{
   color: white;
   border: none;
   height: 30px;
+}
+.bigbutton{
+  height: 100px;
+
 }
