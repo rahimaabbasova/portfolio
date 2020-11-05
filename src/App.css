@@ -140,12 +140,13 @@ input[type=text]:nth-child(3){
   margin-left: 0px;
   margin-right: 0px;
 }
-input[type=send]{
+input[type=button]{
   text-align: center;
   background-color: grey;
   color: white;
   border: none;
   height: 30px;
+  cursor: pointer;
 }
 .bigbutton{
   height: 100px !important;

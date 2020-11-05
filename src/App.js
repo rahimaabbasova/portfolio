@@ -1,8 +1,20 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import React, { useState, useEffect } from 'react'
+import axios
 function App(props) {
+/// const [name, setName] = useState('')
+///  const [surname, setSurname] = useState('')
+///  const [email, setEmail] = useState('')
+///  const [subject, setSubject] = useState('')
+///  const [message, setMessage] = useState('')
+const reader = () => {
+  let a = document.getElementsByClassName('name')[0].value
+  let b = document.getElementsByClassName('email')[0].value
+  let c = document.getElementsByClassName('subject')[0].value
+  let d = document.getElementsByClassName('bigbutton')[0].value
+}
+
   return (
     <div className="App">
       <div className="HeroImage"></div>
@@ -22,7 +34,7 @@ function App(props) {
         for images used in this design.You can <span className="BoldText">
             change menu icons</span> by checking
         <span><a href="http://fontawesome.info/font-awesome-icon-world-map/"> Font Awesome</a></span>
-        (version 4). Example: <i class="fa fa-camera"></i>
+        (version 4). Example: <i className="fa fa-camera"></i>
         </p>
       </div>
       <hr className="hr"></hr>
@@ -92,13 +104,13 @@ function App(props) {
       <hr></hr>
       <div className="Part"><p><span className="BoldText">PLACE TO TALK WITH ME</span></p><p>Vestibulum ac iaculis erat, in semper dolor. Maecenas et lorem molestie, maximus justo dignissim, cursus nisl. Nullam at ante quis ex pharetra pulvinar quis id dolor. Integer lorem odio, euismod ut sem sit amet, imperdiet condimentum diam.</p>
         <form action="http://localhost:3000/">
-          <input type="text" placeholder="Your Name..."></input>
-          <input type="text"placeholder="Your Email..."></input>
-          <input type="text"placeholder="Subject..."></input><br></br>
-          <textarea type="text"placeholder="Leave your message..." className='bigbutton'></textarea><br></br>
-          <input type="send" value="SEND MESSAGE"></input>
+          <input type="text" placeholder="Your Name..." className='name'></input>
+          <input type="text" placeholder="Your Email..." className='email'></input>
+          <input type="text" placeholder="Subject..." className='subject'></input><br></br>
+          <textarea type="text" placeholder="Leave your message..." className='bigbutton'></textarea><br></br>
+          <input type="button" value="SEND MESSAGE" onClick = {reader}></input>
         </form></div>
-        <hr></hr>
+      <hr></hr>
     </div>
   );
 }
